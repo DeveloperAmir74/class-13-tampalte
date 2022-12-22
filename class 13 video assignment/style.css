@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: red;
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+h2::before {
+    content: ' Age-';
+}
+
+h2::after {
+    content: '-Pore';
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p::before {
+    content: '"';
+}
+
+p::after {
+    content: '"';
+}
+
+p {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*<!-------before and after section end---------->*/
+
+.batton {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.batton {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.batton1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.batton2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.click-me {
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #1abc9c;
+    display: inline-block;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-me1 {
+    font-size: 40px;
+    text-decoration: none;
+    background-color: #1abc9c;
+    display: inline-block;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-me2 {
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #1abc9c;
+    display: inline-block;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.click-me::before {
+    content: '';
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+
+.click-me1::before {
+    content: '';
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+
+.click-me2::before {
+    content: '';
+    height: 100%;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: red;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: -1;
+}
+
+.click-me:hover::before {
+    height: 100%;
+}
+
+.click-me1:hover::before {
+    height: 100%;
+}
+
+.click-me2:hover::before {
+    width: 100%;
+}
+
+/*<!--------batton section end----------->*/
+
+ul {
+    margin-left: 30px;
+    list-style: none;
+}
+
+li {
+    font-size: 30px;
+}
+
+li:before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: red;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*--------End Project-----------------*/
